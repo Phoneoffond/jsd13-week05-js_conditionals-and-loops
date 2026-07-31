@@ -14,7 +14,22 @@
 // Use one loop for the rows and a nested loop (or repetition) for the columns.
 
 function rectangle(width, height) {
-  // TODO: replace this with your implementation
+  // Guard: a rectangle with no width or no height is empty.
+  if (width < 1 || height < 1) {
+    return "";
+  }
+
+  const rows = [];
+
+  for (let r = 0; r < height; r++) {
+    let row = "";
+   
+    for (let c = 0; c < width; c++) {
+      row += "*";
+    }
+    rows.push(row);
+  }
+  return rows.join("\n");
 }
 
 // --- Tests (do not edit) ---
