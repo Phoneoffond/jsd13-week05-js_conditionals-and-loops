@@ -7,9 +7,14 @@
 // Use a classic for loop: for (let i = 1; i <= n; i++) { ... }
 
 function sumTo(n) {
-  // TODO: replace this with your implementation
-}
 
+  let total = 0;
+
+  for (let i = 1; i <= n; i++) {
+    total += i; 
+  }
+  return total;
+}
 // --- Tests (do not edit) ---
 import { strictEqual } from "node:assert";
 
