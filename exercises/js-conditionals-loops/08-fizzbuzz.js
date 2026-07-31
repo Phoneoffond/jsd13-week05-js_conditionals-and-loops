@@ -14,8 +14,25 @@
 // The modulo operator n % k gives the remainder; it is 0 when k divides n.
 
 function fizzBuzz(n) {
-  // TODO: replace this with your implementation
+  const result = [];
+
+ 
+  for (let i = 1; i <= n; i++) {
+    
+    if (i % 3 === 0 && i % 5 === 0) {
+      result.push("FizzBuzz");
+    } else if (i % 3 === 0) {
+      result.push("Fizz");
+    } else if (i % 5 === 0) {
+      result.push("Buzz");
+    } else {
+      result.push(i); 
+    }
+  }
+
+  return result;
 }
+
 
 // --- Tests (do not edit) ---
 import { deepStrictEqual } from "node:assert";
